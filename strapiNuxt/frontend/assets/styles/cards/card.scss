@@ -1,0 +1,71 @@
+.card {
+    width: 31%;
+    max-width: 400px;
+    background-color: $white;
+    height: 450px;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 0 0 50px 0;
+    h2 {
+        margin: 0 0 20px 0;
+    }
+    h4 {
+        font-size: 36px;
+    }
+    img {
+        background-color: lavender;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+        &.small {
+            height: 20%;
+        }
+    }
+    &__num {
+        width: 50px;
+        height: 50px;
+        background-color: lavender;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border-right: 2px solid $black;
+        // border-bottom: 2px solid $black;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__info {
+        padding: 20px;
+        &__text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            p {
+                margin: 0 0 15px 0;
+                font-size: 14px;
+            }
+            .markdown {
+                width: 75%;
+            }
+            &__vp {
+                width: 60px;
+                height: 60px;
+                border-left: 1px solid black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+    &__type {
+        width: 60px;
+        height: 60px;
+        border-bottom: solid 30px lavender;
+        border-right: solid 30px lavender;
+        border-left: solid 30px transparent;
+        border-top: solid 30px transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

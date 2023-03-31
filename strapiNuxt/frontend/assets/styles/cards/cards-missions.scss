@@ -1,0 +1,17 @@
+.cards-missions {
+    @media (max-width: 1300px) {
+        .container {
+            max-width: 850px;
+            .card {
+                width: 49%;
+            }
+            @media (max-width: 860px) {
+                max-width: 460px;
+                justify-content: center;
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+} 
